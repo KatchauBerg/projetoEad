@@ -1,0 +1,82 @@
+#cardlogin{
+    background-color: #1A7BA3;
+    width: 350px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0.5px 2px 3px;
+    text-decoration-color: #ffffff;
+
+}
+
+#btnlogin{
+    background-color: #25AAE1;
+}
+
+#btnresponder{
+    background-color: #25AAE1;
+}
+
+#textbtn{
+    color: #033A51;
+}   
+
+a{
+    color: white;
+}
+   
+a:hover {
+    color: #033A51;
+   }
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+
+#send{
+
+    position: absolute;
+    left: 81%;
+    top:70%;
+}
+
+#navbar{
+    padding: 5.5px 0px;
+}
+
+
+#Reclama-1{
+    position: absolute;
+}
+
+#cardreclamalista{
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#linkcard{
+    color: #000;
+    position: absolute;
+    margin: 0;
+    width: 80%;
+}
+
+#cardreclamalistaresponde{
+    top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#Formresponde{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
