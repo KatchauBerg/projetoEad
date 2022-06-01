@@ -23,7 +23,7 @@
               <form>
                   <div class="form-group">
                     <label class="text-light">RA</label>
-                    <input type="number" class="form-control" id="numRa" aria-describedby="emailHelp">
+                    <input type="number" id="numRa" class="form-control"  aria-describedby="emailHelp">
                     <div class="invalid-feedback">
                       Por favor insira um RA Valido.
                     </div>
@@ -31,7 +31,7 @@
                   <div class="form-group">
                     <label class="exampleInputPassword1 text-light">Senha</label>
                     <input type="password" class="form-control" id="txtPassword"> <!-- Input SENHA -->
-                    <small  id="emailHelp" class="form-text text-muted text-light"> <a href="Cadastro.html" > Não tenho conta </a></small>
+                    <small  id="emailHelp" class="form-text text-muted text-light"> <a href="<?=base_url('cadastroView')?>" > Não tenho conta </a></small>
                     <div class="invalid-feedback">
                       Senha incorreta.
                     </div>
@@ -41,22 +41,44 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                   </div> -->
-                  <button type="submit" class="btn btn-block" id="btnlogin"> <b id="textbtn"> ENTRAR </b></button> <!-- Botão Entrar (Envio Formulario) -->
+                  <button type="button" class="btn btn-block" id="btnlogin" onclick ='getDadosLogin()'>ENTRAR</button> <!-- Botão Entrar (Envio Formulario) -->
                 </form>
           </div>
         </div>
 
       <footer>
           <!-- JS -->
-          <script src="<?=base_url('public/js/jquery.min.js');?>"</script>
-          <script src="<?=base_url('public/js/bootstrap.bundle.min.js')?>"></script>
+          <script src="public/js/jquery.min.js"></script>
+          <script src="public/js/bootstrap.bundle.min.js"></script>
+          <script>
+              function getDadosLogin()
+              {
+
+                var base = '<?=base_url('login')?>'
+                var botaoEntrar = $('#btnlogin').val();
+                var getRa = $('#numRa').val();
+                var getPassword =$('#txtPassword').val();
+
+                $(document).ready(function()
+                {
+                  $("#btnlogin").click(function()
+                  {
+                    $.post(
+                      base + '/enviaDadosLogin',
+                      {
+                        ra : $('#numRa').val(),
+                        senha : $("#txtPassword").val()
+                      }, function(data, status)
+                      {
+                        $('#numRa').val();
+                        $('#txtPassword').val();
+                      }
+                    )
+                  });
+                });
+              }
+          </script>
       </footer>
   </body>
 </html>
 
-
-function getDadosLogin()
-{
-  $('#txtPassword').val("");
-  $('#numRa').val("");
-}

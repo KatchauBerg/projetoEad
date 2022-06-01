@@ -5,7 +5,8 @@ class Cadastro extends CI_Controller
 {
 	public function index()
 	{
-		$this->load->view('cadastro.php');
+		$data['title'] = "Hello World";
+		$this->load->view('pages/cadastro', $data);
 
 	}
 }
