@@ -4,6 +4,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Login</title>
+
           <!-- CSS - BOOTSTRAP -->
       <link rel="stylesheet" href="<?=base_url('public/css/bootstrap.min.css');?>">
       <link rel="stylesheet" href="<?=base_url('public/css/style.css');?>">
@@ -31,7 +32,7 @@
                   <div class="form-group">
                     <label class="exampleInputPassword1 text-light">Senha</label>
                     <input type="password" class="form-control" id="txtPassword"> <!-- Input SENHA -->
-                    <small  id="emailHelp" class="form-text text-muted text-light"> <a href="<?=base_url('cadastroView')?>" > Não tenho conta </a></small>
+                    <small  id="emailHelp" class="form-text text-muted text-light"> <a href="<?=base_url('cadastro')?>" > Não tenho conta </a></small>
                     <div class="invalid-feedback">
                       Senha incorreta.
                     </div>
@@ -41,44 +42,37 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                   </div> -->
-                  <button type="button" class="btn btn-block" id="btnlogin" onclick ='getDadosLogin()'>ENTRAR</button> <!-- Botão Entrar (Envio Formulario) -->
+                  <button type="button" class="btn btn-block" id="btnlogin">ENTRAR</button> <!-- Botão Entrar (Envio Formulario) -->
                 </form>
           </div>
         </div>
 
       <footer>
           <!-- JS -->
-          <script src="public/js/jquery.min.js"></script>
-          <script src="public/js/bootstrap.bundle.min.js"></script>
-          <script>
-              function getDadosLogin()
-              {
-
-                var base = '<?=base_url('login')?>'
-                var botaoEntrar = $('#btnlogin').val();
-                var getRa = $('#numRa').val();
-                var getPassword =$('#txtPassword').val();
-
-                $(document).ready(function()
-                {
-                  $("#btnlogin").click(function()
-                  {
-                    $.post(
-                      base + '/enviaDadosLogin',
-                      {
-                        ra : $('#numRa').val(),
-                        senha : $("#txtPassword").val()
-                      }, function(data, status)
-                      {
-                        $('#numRa').val();
-                        $('#txtPassword').val();
-                      }
-                    )
-                  });
-                });
-              }
-          </script>
+          <script src="<?=base_url('public/js/jquery.min.js');?>"></script>
+          <script src="<?=base_url('public/js/bootstrap.bundle.min.js');?>"></script>
       </footer>
   </body>
 </html>
 
+<script>
+  var base = '<?=base_url('login')?>'
+
+  $('#numRa').val(601969);
+  $("#btnlogin").click(function()
+  {
+    getDadosLogin();
+  });
+
+  function getDadosLogin()
+  {
+    // alert(base);
+    $.post(
+      base + '/enviaDadosLogin',{
+        ra: $('#numRa').val(),
+        senha: $("#txtPassword").val()
+      }
+    );
+  }
+
+</script>

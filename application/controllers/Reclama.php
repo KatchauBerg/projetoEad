@@ -1,11 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class login extends CI_Controller
+class reclama extends CI_Controller
 {
 	public function index()
 	{
-		$this->load->view('pages/autenticacao/login');
+		$this->load->view('pages/aluno/reclama');
 	}
 
 	public function enviaDadosLogin()
