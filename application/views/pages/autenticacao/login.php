@@ -18,6 +18,8 @@
           </li>
         </ul>
       </nav>
+      <a id = "opProf" ref="<?=base_url('reclamaLista')?>">
+      <a id = "opAluno" ref="<?=base_url('reclamaLista')?>">
       <div class="card" id="cardlogin">
           <div class="card-body">
               <h5 class="card-title text-center text-light">LOGIN</h5>
@@ -28,6 +30,13 @@
                     <div class="invalid-feedback">
                       Por favor insira um RA Valido.
                     </div>
+                  </div>
+                  <div class="form-group" style="width: 150px">
+                      <label class= "text-light">Tipo</label>
+                      <select class="bs-select form-control" id="cmbOpcao">
+                          <option value="0" selected>Aluno</option>
+                          <option value="1">Professor</option>
+                      </select>
                   </div>
                   <div class="form-group">
                     <label class="exampleInputPassword1 text-light">Senha</label>
@@ -42,7 +51,7 @@
                     <input type="checkbox" class="form-check-input" id="exampleCheck1">
                     <label class="form-check-label" for="exampleCheck1">Check me out</label>
                   </div> -->
-                  <button type="button" class="btn btn-block" id="btnlogin">ENTRAR</button> <!-- Botão Entrar (Envio Formulario) -->
+                  <button type="button" class="btn btn-block" id="btnlogin" onclick = "redirect()">ENTRAR</button> <!-- Botão Entrar (Envio Formulario) -->
                 </form>
           </div>
         </div>
@@ -57,7 +66,6 @@
 
 <script>
   var base = '<?=base_url('login')?>'
-
   $('#numRa').val(601969);
   $("#btnlogin").click(function()
   {
@@ -73,6 +81,25 @@
         senha: $("#txtPassword").val()
       }
     );
+  }
+
+  function redirect()
+  {
+    var link;
+
+    if($('#cmbOpcao').val() == 1)
+    {
+      window.location.replace('<?=base_url('reclamaLista')?>')
+    }
+    else
+    {
+      window.location.replace('<?=base_url('reclama')?>')
+    }
+
+    link.onclick = function()
+    {
+      alert(123);
+    }
   }
 
 </script>

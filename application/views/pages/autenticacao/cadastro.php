@@ -40,13 +40,6 @@
                           Por favor insira um RA Valido.
                         </div>
                     </div>
-                    <div class="form-group" style="width: 150px">
-                      <label class= "text-light">Tipo</label>
-                      <select class="bs-select form-control" id="cmbOpcao">
-                          <option value="0" selected>Aluno</option>
-                          <option value="1">Professor</option>
-                      </select>
-                    </div>
                 <div class="form-group">
                   <label class="text-light">E-mail</label>
                   <input type="email" class="form-control" id="txtEmail" aria-describedby="emailHelp">

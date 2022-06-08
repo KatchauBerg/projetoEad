@@ -30,10 +30,10 @@
           <div class="card-body">
             <div class="row justify-content-md-center" style="margin:auto;">
               <div class="col col-sm">
-                <h6 class="text-left"> Nome aluno:"xxxx xxxxxx xxxxx"  </h6>
+                <h6 class="text-left"> Nome aluno:"Kevin De Souza Lima"  </h6>
               </div>
               <div class="col-md-auto">
-                <h6 class="text-right">RA:"xxxxxx"</h6>
+                <h6 class="text-right">RA:"601969"</h6>
               </div>
               <div class="col-sm">
                 <h6 class="text-right">Data de envio</h6>
@@ -41,10 +41,10 @@
            </div>
            <div class="row justify-content-md-center" style="margin:auto;">
             <div class="col col-sm">
-              <h6 class="text-left"> Assunto: "Lorem ipsum dolor sit"  </h6>
+              <h6 class="text-left"> Assunto: "Erro ao gerar Login"  </h6>
             </div>
             <div class="col-sm">
-              <h6 class="text-right">xx/xx/xxxx às xx:xx</h6>
+              <h6 class="text-right">03/06/2022 às 10:38</h6>
             </div>
          </div>
             </div>

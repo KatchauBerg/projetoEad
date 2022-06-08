@@ -30,10 +30,10 @@
               <div class="card-body">
                 <div class="row justify-content-md-center" style="margin:auto;">
                   <div class="col col-sm">
-                    <h6 class="text-left"> Nome:"nome aluno"  </h6>
+                    <h6 class="text-left"> Nome:"Kevin De Souza Lima"  </h6>
                   </div>
                   <div class="col-md-auto">
-                    <h6 class="text-center" id='#txtRa'>Ra:</h6>
+                    <h6 class="text-center" id='#txtRa'>Ra: 601969</h6>
                   </div>
                   <div class="col-sm">
                     <h6 class="text-right">"Data de envio"</h6>
@@ -41,16 +41,16 @@
                </div>
                <div class="row justify-content-md-center" style="margin:auto;">
                 <div class="col col-sm" style="max-width:1000px;">
-                  <h6 class="text-left txtReclamacao"> "Assunto da reclamação"  </h6>
+                  <h6 class="text-left txtReclamacao"> "Erro Ao Gerar Login"  </h6>
                 </div>
                 <div class="col-sm">
-                  <h6 class="text-right" id= "#xtHorario">"xx/xx/xxxx ás xx:xx"</h6>
+                  <h6 class="text-right" id= "#xtHorario">"03/06/2022 ás 10:38"</h6>
                 </div>
                   </div>
                 <hr>
                 <div class="row justify-content-md-center" style="margin:auto; height: 300px;">
                     <div class="col col-sm" style="max-width:1000px;">
-                      <h6 class="text-left"> "Assunto da reclamação"  </h6>
+                      <h6 class="text-left"> "Erro Ao Gerar Login"  </h6>
                     </div>
                       </div>
                 </div>

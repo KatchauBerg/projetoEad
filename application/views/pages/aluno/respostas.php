@@ -30,16 +30,16 @@
           <div class="card-body">
             <div class="row justify-content-md-center" style="margin:auto;">
               <div class="col col-sm">
-                <h6 class="text-left"> "nome mediador do que respondeu"  </h6>
+                <h6 class="text-left"> Professor: "Idelberto Bugado "  </h6>
               </div>
               <div class="col-sm">
-                <h6 class="text-right">"Assunto"</h6>
+                <h6 class="text-right">"Problemas ao Gerar Login"</h6>
               </div>
            </div>
             <hr>
             <div class="row justify-content-md-center" style="margin:auto; height: 220px;">
                 <div class="col col-sm text-left">
-                   "Resposta da reclamação"  "Resposta da reclamação" "Resposta da reclamação" "Resposta da reclamação" "Resposta da reclamação" "Resposta da reclamação" "Resposta da reclamação" "Resposta da reclamação"
+                   Bom Dia Kevin o erro de login ocorre porque você esta errando sua senha.
                 </div>
                   </div>
             </div>
