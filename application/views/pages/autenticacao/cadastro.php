@@ -42,7 +42,7 @@
                     </div>
                 <div class="form-group">
                   <label class="text-light">E-mail</label>
-                  <input type="email" class="form-control" id="txtEmail" aria-describedby="emailHelp">
+                  <input type="text" class="form-control" id="txtEmail" aria-describedby="emailHelp">
                   <div class="invalid-feedback">
                     Por favor insira um E-mail Válido.
                   </div>
@@ -78,6 +78,7 @@
   $("#btnCadastro").click(function()
   {
     enviaDadosCadastro();
+    redirect();
   });
 
   function enviaDadosCadastro()
@@ -93,6 +94,12 @@
         valorOption: $('#cmbOpcao').val()
       }
     );
+  }
+
+  function redirect()
+  {
+    var link;
+    window.location.replace('<?=base_url('login')?>')
   }
 
 </script>
